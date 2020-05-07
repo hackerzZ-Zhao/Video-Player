@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{8F07D8D4-1B37-35F1-A13E-691575D34488}</ProjectGuid>
+    <RootNamespace>MYPlayer</RootNamespace>
+    <Keyword>Qt4VSv1.0</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;" Label="Configuration">
+    <PlatformToolset>v140</PlatformToolset>
+    <OutputDirectory>..\..\bin\release\x64\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>tmp\release\</IntermediateDirectory>
+    <PrimaryOutput>MYPlayer</PrimaryOutput>
+  </PropertyGroup>
+  <PropertyGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;" Label="Configuration">
+    <PlatformToolset>v140</PlatformToolset>
+    <OutputDirectory>..\..\bin\debug\x64\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>tmp\debug\</IntermediateDirectory>
+    <PrimaryOutput>MYPlayer</PrimaryOutput>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists(&apos;$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props&apos;)" />
+  </ImportGroup>
+  <ImportGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists(&apos;$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props&apos;)" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <OutDir Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">..\..\bin\release\x64\</OutDir>
+    <IntDir Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">tmp\release\</IntDir>
+    <TargetName Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">MYPlayer</TargetName>
+    <IgnoreImportLibrary Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">true</IgnoreImportLibrary>
+    <LinkIncremental Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">false</LinkIncremental>
+    <OutDir Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">..\..\bin\debug\x64\</OutDir>
+    <IntDir Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">tmp\debug\</IntDir>
+    <TargetName Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">MYPlayer</TargetName>
+    <IgnoreImportLibrary Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">true</IgnoreImportLibrary>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;..\..\include;D:\Qt\Qt5.9.8\5.9.8\msvc2015_64\include;D:\Qt\Qt5.9.8\5.9.8\msvc2015_64\include\QtQuick;D:\Qt\Qt5.9.8\5.9.8\msvc2015_64\include\QtOpenGL;D:\Qt\Qt5.9.8\5.9.8\msvc2015_64\include\QtWidgets;D:\Qt\Qt5.9.8\5.9.8\msvc2015_64\include\QtMultimedia;D:\Qt\Qt5.9.8\5.9.8\msvc2015_64\include\QtOpenGLExtensions;D:\Qt\Qt5.9.8\5.9.8\msvc2015_64\include\QtGui;D:\Qt\Qt5.9.8\5.9.8\msvc2015_64\include\QtANGLE;D:\Qt\Qt5.9.8\5.9.8\msvc2015_64\include\QtQml;D:\Qt\Qt5.9.8\5.9.8\msvc2015_64\include\QtNetwork;D:\Qt\Qt5.9.8\5.9.8\msvc2015_64\include\QtCore;tmp\release;D:\Qt\Qt5.9.8\5.9.8\msvc2015_64\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>tmp\release\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <DisableSpecificWarnings>4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>tmp\release\</ObjectFileName>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;WIN64;QT_DEPRECATED_WARNINGS;QT_NO_DEBUG;QT_QUICK_LIB;QT_OPENGL_LIB;QT_WIDGETS_LIB;QT_MULTIMEDIA_LIB;QT_OPENGLEXTENSIONS_LIB;QT_GUI_LIB;QT_QML_LIB;QT_NETWORK_LIB;QT_CORE_LIB;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <ProgramDataBaseFileName></ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>D:\Qt\Qt5.9.8\5.9.8\msvc2015_64\lib\qtmain.lib;shell32.lib;avformat.lib;avcodec.lib;avutil.lib;swresample.lib;swscale.lib;D:\Qt\Qt5.9.8\5.9.8\msvc2015_64\lib\Qt5Quick.lib;D:\Qt\Qt5.9.8\5.9.8\msvc2015_64\lib\Qt5OpenGL.lib;D:\Qt\Qt5.9.8\5.9.8\msvc2015_64\lib\Qt5Widgets.lib;D:\Qt\Qt5.9.8\5.9.8\msvc2015_64\lib\Qt5Multimedia.lib;D:\Qt\Qt5.9.8\5.9.8\msvc2015_64\lib\Qt5OpenGLExtensions.lib;Qt5Gui.lib;Qt5Core.lib;D:\Qt\Qt5.9.8\5.9.8\msvc2015_64\lib\Qt5Gui.lib;D:\Qt\Qt5.9.8\5.9.8\msvc2015_64\lib\Qt5Qml.lib;D:\Qt\Qt5.9.8\5.9.8\msvc2015_64\lib\Qt5Network.lib;D:\Qt\Qt5.9.8\5.9.8\msvc2015_64\lib\Qt5Core.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:\Qt\Qt5.9.8\5.9.8\msvc2015_64\lib;C:\openssl\lib;C:\Utils\my_sql\my_sql\lib;C:\Utils\postgresql\pgsql\lib;D:\mooc\C++Mooc\Publish\CodeForMoocC++Course\quickzhao_Codes\Muying\MYPlayer\lib\release\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>&quot;/MANIFESTDEPENDENCY:type=&apos;win32&apos; name=&apos;Microsoft.Windows.Common-Controls&apos; version=&apos;6.0.0.0&apos; publicKeyToken=&apos;6595b64144ccf1df&apos; language=&apos;*&apos; processorArchitecture=&apos;*&apos;&quot; %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkIncremental>false</LinkIncremental>
+      <OutputFile>$(OutDir)\MYPlayer.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;WIN64;QT_DEPRECATED_WARNINGS;QT_NO_DEBUG;QT_QUICK_LIB;QT_OPENGL_LIB;QT_WIDGETS_LIB;QT_MULTIMEDIA_LIB;QT_OPENGLEXTENSIONS_LIB;QT_GUI_LIB;QT_QML_LIB;QT_NETWORK_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;..\..\include;D:\Qt\Qt5.9.8\5.9.8\msvc2015_64\include;D:\Qt\Qt5.9.8\5.9.8\msvc2015_64\include\QtQuick;D:\Qt\Qt5.9.8\5.9.8\msvc2015_64\include\QtOpenGL;D:\Qt\Qt5.9.8\5.9.8\msvc2015_64\include\QtWidgets;D:\Qt\Qt5.9.8\5.9.8\msvc2015_64\include\QtMultimedia;D:\Qt\Qt5.9.8\5.9.8\msvc2015_64\include\QtOpenGLExtensions;D:\Qt\Qt5.9.8\5.9.8\msvc2015_64\include\QtGui;D:\Qt\Qt5.9.8\5.9.8\msvc2015_64\include\QtANGLE;D:\Qt\Qt5.9.8\5.9.8\msvc2015_64\include\QtQml;D:\Qt\Qt5.9.8\5.9.8\msvc2015_64\include\QtNetwork;D:\Qt\Qt5.9.8\5.9.8\msvc2015_64\include\QtCore;tmp\debug;D:\Qt\Qt5.9.8\5.9.8\msvc2015_64\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>tmp\debug\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>tmp\debug\</ObjectFileName>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;WIN64;QT_DEPRECATED_WARNINGS;QT_QUICK_LIB;QT_OPENGL_LIB;QT_WIDGETS_LIB;QT_MULTIMEDIA_LIB;QT_OPENGLEXTENSIONS_LIB;QT_GUI_LIB;QT_QML_LIB;QT_NETWORK_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>D:\Qt\Qt5.9.8\5.9.8\msvc2015_64\lib\qtmaind.lib;shell32.lib;avformat.lib;avcodec.lib;avutil.lib;swresample.lib;swscale.lib;D:\Qt\Qt5.9.8\5.9.8\msvc2015_64\lib\Qt5Quickd.lib;D:\Qt\Qt5.9.8\5.9.8\msvc2015_64\lib\Qt5OpenGLd.lib;D:\Qt\Qt5.9.8\5.9.8\msvc2015_64\lib\Qt5Widgetsd.lib;D:\Qt\Qt5.9.8\5.9.8\msvc2015_64\lib\Qt5Multimediad.lib;D:\Qt\Qt5.9.8\5.9.8\msvc2015_64\lib\Qt5OpenGLExtensionsd.lib;Qt5Guid.lib;Qt5Cored.lib;D:\Qt\Qt5.9.8\5.9.8\msvc2015_64\lib\Qt5Guid.lib;D:\Qt\Qt5.9.8\5.9.8\msvc2015_64\lib\Qt5Qmld.lib;D:\Qt\Qt5.9.8\5.9.8\msvc2015_64\lib\Qt5Networkd.lib;D:\Qt\Qt5.9.8\5.9.8\msvc2015_64\lib\Qt5Cored.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:\Qt\Qt5.9.8\5.9.8\msvc2015_64\lib;C:\openssl\lib;C:\Utils\my_sql\my_sql\lib;C:\Utils\postgresql\pgsql\lib;D:\mooc\C++Mooc\Publish\CodeForMoocC++Course\quickzhao_Codes\Muying\MYPlayer\lib\debug\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>&quot;/MANIFESTDEPENDENCY:type=&apos;win32&apos; name=&apos;Microsoft.Windows.Common-Controls&apos; version=&apos;6.0.0.0&apos; publicKeyToken=&apos;6595b64144ccf1df&apos; language=&apos;*&apos; processorArchitecture=&apos;*&apos;&quot; %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <OutputFile>$(OutDir)\MYPlayer.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;WIN64;QT_DEPRECATED_WARNINGS;QT_QUICK_LIB;QT_OPENGL_LIB;QT_WIDGETS_LIB;QT_MULTIMEDIA_LIB;QT_OPENGLEXTENSIONS_LIB;QT_GUI_LIB;QT_QML_LIB;QT_NETWORK_LIB;QT_CORE_LIB;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="MYAudioPlay.cpp" />
+    <ClCompile Include="MYAudioThread.cpp" />
+    <ClCompile Include="MYDecode.cpp" />
+    <ClCompile Include="MYDecodeThread.cpp" />
+    <ClCompile Include="MYDemux.cpp" />
+    <ClCompile Include="MYDemuxThread.cpp" />
+    <ClCompile Include="MYPlay.cpp" />
+    <ClCompile Include="MYResample.cpp" />
+    <ClCompile Include="MYSubTitle.cpp" />
+    <ClCompile Include="MYVideoOutput.cpp" />
+    <ClCompile Include="MYVideoThread.cpp" />
+    <ClCompile Include="MainApp.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="IVideoCall.h" />
+    <ClInclude Include="MYAudioPlay.h" />
+    <ClInclude Include="MYAudioThread.h" />
+    <ClInclude Include="MYDecode.h" />
+    <ClInclude Include="MYDecodeThread.h" />
+    <ClInclude Include="MYDemux.h" />
+    <ClInclude Include="MYDemuxThread.h" />
+    <CustomBuild Include="MYPlay.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">MYPlay.h;tmp\release\moc_predefs.h;D:\Qt\Qt5.9.8\5.9.8\msvc2015_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">D:\Qt\Qt5.9.8\5.9.8\msvc2015_64\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -DWIN64 -DQT_DEPRECATED_WARNINGS -DQT_NO_DEBUG -DQT_QUICK_LIB -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_OPENGLEXTENSIONS_LIB -DQT_GUI_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include ./tmp/release/moc_predefs.h -ID:/Qt/Qt5.9.8/5.9.8/msvc2015_64/mkspecs/win32-msvc -ID:/mooc/C++Mooc/Publish/CodeForMoocC++Course/quickzhao_Codes/Muying/MYPlayer/src/MYPlayer -ID:/mooc/C++Mooc/Publish/CodeForMoocC++Course/quickzhao_Codes/Muying/MYPlayer/include -ID:/Qt/Qt5.9.8/5.9.8/msvc2015_64/include -ID:/Qt/Qt5.9.8/5.9.8/msvc2015_64/include/QtQuick -ID:/Qt/Qt5.9.8/5.9.8/msvc2015_64/include/QtOpenGL -ID:/Qt/Qt5.9.8/5.9.8/msvc2015_64/include/QtWidgets -ID:/Qt/Qt5.9.8/5.9.8/msvc2015_64/include/QtMultimedia -ID:/Qt/Qt5.9.8/5.9.8/msvc2015_64/include/QtOpenGLExtensions -ID:/Qt/Qt5.9.8/5.9.8/msvc2015_64/include/QtGui -ID:/Qt/Qt5.9.8/5.9.8/msvc2015_64/include/QtANGLE -ID:/Qt/Qt5.9.8/5.9.8/msvc2015_64/include/QtQml -ID:/Qt/Qt5.9.8/5.9.8/msvc2015_64/include/QtNetwork -ID:/Qt/Qt5.9.8/5.9.8/msvc2015_64/include/QtCore MYPlay.h -o tmp\release\moc_MYPlay.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">MOC MYPlay.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">tmp\release\moc_MYPlay.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">MYPlay.h;tmp\debug\moc_predefs.h;D:\Qt\Qt5.9.8\5.9.8\msvc2015_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">D:\Qt\Qt5.9.8\5.9.8\msvc2015_64\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -DWIN64 -DQT_DEPRECATED_WARNINGS -DQT_QUICK_LIB -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_OPENGLEXTENSIONS_LIB -DQT_GUI_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include ./tmp/debug/moc_predefs.h -ID:/Qt/Qt5.9.8/5.9.8/msvc2015_64/mkspecs/win32-msvc -ID:/mooc/C++Mooc/Publish/CodeForMoocC++Course/quickzhao_Codes/Muying/MYPlayer/src/MYPlayer -ID:/mooc/C++Mooc/Publish/CodeForMoocC++Course/quickzhao_Codes/Muying/MYPlayer/include -ID:/Qt/Qt5.9.8/5.9.8/msvc2015_64/include -ID:/Qt/Qt5.9.8/5.9.8/msvc2015_64/include/QtQuick -ID:/Qt/Qt5.9.8/5.9.8/msvc2015_64/include/QtOpenGL -ID:/Qt/Qt5.9.8/5.9.8/msvc2015_64/include/QtWidgets -ID:/Qt/Qt5.9.8/5.9.8/msvc2015_64/include/QtMultimedia -ID:/Qt/Qt5.9.8/5.9.8/msvc2015_64/include/QtOpenGLExtensions -ID:/Qt/Qt5.9.8/5.9.8/msvc2015_64/include/QtGui -ID:/Qt/Qt5.9.8/5.9.8/msvc2015_64/include/QtANGLE -ID:/Qt/Qt5.9.8/5.9.8/msvc2015_64/include/QtQml -ID:/Qt/Qt5.9.8/5.9.8/msvc2015_64/include/QtNetwork -ID:/Qt/Qt5.9.8/5.9.8/msvc2015_64/include/QtCore MYPlay.h -o tmp\debug\moc_MYPlay.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">MOC MYPlay.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">tmp\debug\moc_MYPlay.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="MYResample.h" />
+    <CustomBuild Include="MYSubTitle.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">MYSubTitle.h;tmp\release\moc_predefs.h;D:\Qt\Qt5.9.8\5.9.8\msvc2015_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">D:\Qt\Qt5.9.8\5.9.8\msvc2015_64\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -DWIN64 -DQT_DEPRECATED_WARNINGS -DQT_NO_DEBUG -DQT_QUICK_LIB -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_OPENGLEXTENSIONS_LIB -DQT_GUI_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include ./tmp/release/moc_predefs.h -ID:/Qt/Qt5.9.8/5.9.8/msvc2015_64/mkspecs/win32-msvc -ID:/mooc/C++Mooc/Publish/CodeForMoocC++Course/quickzhao_Codes/Muying/MYPlayer/src/MYPlayer -ID:/mooc/C++Mooc/Publish/CodeForMoocC++Course/quickzhao_Codes/Muying/MYPlayer/include -ID:/Qt/Qt5.9.8/5.9.8/msvc2015_64/include -ID:/Qt/Qt5.9.8/5.9.8/msvc2015_64/include/QtQuick -ID:/Qt/Qt5.9.8/5.9.8/msvc2015_64/include/QtOpenGL -ID:/Qt/Qt5.9.8/5.9.8/msvc2015_64/include/QtWidgets -ID:/Qt/Qt5.9.8/5.9.8/msvc2015_64/include/QtMultimedia -ID:/Qt/Qt5.9.8/5.9.8/msvc2015_64/include/QtOpenGLExtensions -ID:/Qt/Qt5.9.8/5.9.8/msvc2015_64/include/QtGui -ID:/Qt/Qt5.9.8/5.9.8/msvc2015_64/include/QtANGLE -ID:/Qt/Qt5.9.8/5.9.8/msvc2015_64/include/QtQml -ID:/Qt/Qt5.9.8/5.9.8/msvc2015_64/include/QtNetwork -ID:/Qt/Qt5.9.8/5.9.8/msvc2015_64/include/QtCore MYSubTitle.h -o tmp\release\moc_MYSubTitle.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">MOC MYSubTitle.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">tmp\release\moc_MYSubTitle.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">MYSubTitle.h;tmp\debug\moc_predefs.h;D:\Qt\Qt5.9.8\5.9.8\msvc2015_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">D:\Qt\Qt5.9.8\5.9.8\msvc2015_64\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -DWIN64 -DQT_DEPRECATED_WARNINGS -DQT_QUICK_LIB -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_OPENGLEXTENSIONS_LIB -DQT_GUI_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include ./tmp/debug/moc_predefs.h -ID:/Qt/Qt5.9.8/5.9.8/msvc2015_64/mkspecs/win32-msvc -ID:/mooc/C++Mooc/Publish/CodeForMoocC++Course/quickzhao_Codes/Muying/MYPlayer/src/MYPlayer -ID:/mooc/C++Mooc/Publish/CodeForMoocC++Course/quickzhao_Codes/Muying/MYPlayer/include -ID:/Qt/Qt5.9.8/5.9.8/msvc2015_64/include -ID:/Qt/Qt5.9.8/5.9.8/msvc2015_64/include/QtQuick -ID:/Qt/Qt5.9.8/5.9.8/msvc2015_64/include/QtOpenGL -ID:/Qt/Qt5.9.8/5.9.8/msvc2015_64/include/QtWidgets -ID:/Qt/Qt5.9.8/5.9.8/msvc2015_64/include/QtMultimedia -ID:/Qt/Qt5.9.8/5.9.8/msvc2015_64/include/QtOpenGLExtensions -ID:/Qt/Qt5.9.8/5.9.8/msvc2015_64/include/QtGui -ID:/Qt/Qt5.9.8/5.9.8/msvc2015_64/include/QtANGLE -ID:/Qt/Qt5.9.8/5.9.8/msvc2015_64/include/QtQml -ID:/Qt/Qt5.9.8/5.9.8/msvc2015_64/include/QtNetwork -ID:/Qt/Qt5.9.8/5.9.8/msvc2015_64/include/QtCore MYSubTitle.h -o tmp\debug\moc_MYSubTitle.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">MOC MYSubTitle.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">tmp\debug\moc_MYSubTitle.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="MYVideoOutput.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">MYVideoOutput.h;tmp\release\moc_predefs.h;D:\Qt\Qt5.9.8\5.9.8\msvc2015_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">D:\Qt\Qt5.9.8\5.9.8\msvc2015_64\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -DWIN64 -DQT_DEPRECATED_WARNINGS -DQT_NO_DEBUG -DQT_QUICK_LIB -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_OPENGLEXTENSIONS_LIB -DQT_GUI_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include ./tmp/release/moc_predefs.h -ID:/Qt/Qt5.9.8/5.9.8/msvc2015_64/mkspecs/win32-msvc -ID:/mooc/C++Mooc/Publish/CodeForMoocC++Course/quickzhao_Codes/Muying/MYPlayer/src/MYPlayer -ID:/mooc/C++Mooc/Publish/CodeForMoocC++Course/quickzhao_Codes/Muying/MYPlayer/include -ID:/Qt/Qt5.9.8/5.9.8/msvc2015_64/include -ID:/Qt/Qt5.9.8/5.9.8/msvc2015_64/include/QtQuick -ID:/Qt/Qt5.9.8/5.9.8/msvc2015_64/include/QtOpenGL -ID:/Qt/Qt5.9.8/5.9.8/msvc2015_64/include/QtWidgets -ID:/Qt/Qt5.9.8/5.9.8/msvc2015_64/include/QtMultimedia -ID:/Qt/Qt5.9.8/5.9.8/msvc2015_64/include/QtOpenGLExtensions -ID:/Qt/Qt5.9.8/5.9.8/msvc2015_64/include/QtGui -ID:/Qt/Qt5.9.8/5.9.8/msvc2015_64/include/QtANGLE -ID:/Qt/Qt5.9.8/5.9.8/msvc2015_64/include/QtQml -ID:/Qt/Qt5.9.8/5.9.8/msvc2015_64/include/QtNetwork -ID:/Qt/Qt5.9.8/5.9.8/msvc2015_64/include/QtCore MYVideoOutput.h -o tmp\release\moc_MYVideoOutput.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">MOC MYVideoOutput.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">tmp\release\moc_MYVideoOutput.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">MYVideoOutput.h;tmp\debug\moc_predefs.h;D:\Qt\Qt5.9.8\5.9.8\msvc2015_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">D:\Qt\Qt5.9.8\5.9.8\msvc2015_64\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -DWIN64 -DQT_DEPRECATED_WARNINGS -DQT_QUICK_LIB -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_OPENGLEXTENSIONS_LIB -DQT_GUI_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include ./tmp/debug/moc_predefs.h -ID:/Qt/Qt5.9.8/5.9.8/msvc2015_64/mkspecs/win32-msvc -ID:/mooc/C++Mooc/Publish/CodeForMoocC++Course/quickzhao_Codes/Muying/MYPlayer/src/MYPlayer -ID:/mooc/C++Mooc/Publish/CodeForMoocC++Course/quickzhao_Codes/Muying/MYPlayer/include -ID:/Qt/Qt5.9.8/5.9.8/msvc2015_64/include -ID:/Qt/Qt5.9.8/5.9.8/msvc2015_64/include/QtQuick -ID:/Qt/Qt5.9.8/5.9.8/msvc2015_64/include/QtOpenGL -ID:/Qt/Qt5.9.8/5.9.8/msvc2015_64/include/QtWidgets -ID:/Qt/Qt5.9.8/5.9.8/msvc2015_64/include/QtMultimedia -ID:/Qt/Qt5.9.8/5.9.8/msvc2015_64/include/QtOpenGLExtensions -ID:/Qt/Qt5.9.8/5.9.8/msvc2015_64/include/QtGui -ID:/Qt/Qt5.9.8/5.9.8/msvc2015_64/include/QtANGLE -ID:/Qt/Qt5.9.8/5.9.8/msvc2015_64/include/QtQml -ID:/Qt/Qt5.9.8/5.9.8/msvc2015_64/include/QtNetwork -ID:/Qt/Qt5.9.8/5.9.8/msvc2015_64/include/QtCore MYVideoOutput.h -o tmp\debug\moc_MYVideoOutput.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">MOC MYVideoOutput.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">tmp\debug\moc_MYVideoOutput.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="MYVideoThread.h" />
+    <CustomBuild Include="MainApp.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">MainApp.h;tmp\release\moc_predefs.h;D:\Qt\Qt5.9.8\5.9.8\msvc2015_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">D:\Qt\Qt5.9.8\5.9.8\msvc2015_64\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -DWIN64 -DQT_DEPRECATED_WARNINGS -DQT_NO_DEBUG -DQT_QUICK_LIB -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_OPENGLEXTENSIONS_LIB -DQT_GUI_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include ./tmp/release/moc_predefs.h -ID:/Qt/Qt5.9.8/5.9.8/msvc2015_64/mkspecs/win32-msvc -ID:/mooc/C++Mooc/Publish/CodeForMoocC++Course/quickzhao_Codes/Muying/MYPlayer/src/MYPlayer -ID:/mooc/C++Mooc/Publish/CodeForMoocC++Course/quickzhao_Codes/Muying/MYPlayer/include -ID:/Qt/Qt5.9.8/5.9.8/msvc2015_64/include -ID:/Qt/Qt5.9.8/5.9.8/msvc2015_64/include/QtQuick -ID:/Qt/Qt5.9.8/5.9.8/msvc2015_64/include/QtOpenGL -ID:/Qt/Qt5.9.8/5.9.8/msvc2015_64/include/QtWidgets -ID:/Qt/Qt5.9.8/5.9.8/msvc2015_64/include/QtMultimedia -ID:/Qt/Qt5.9.8/5.9.8/msvc2015_64/include/QtOpenGLExtensions -ID:/Qt/Qt5.9.8/5.9.8/msvc2015_64/include/QtGui -ID:/Qt/Qt5.9.8/5.9.8/msvc2015_64/include/QtANGLE -ID:/Qt/Qt5.9.8/5.9.8/msvc2015_64/include/QtQml -ID:/Qt/Qt5.9.8/5.9.8/msvc2015_64/include/QtNetwork -ID:/Qt/Qt5.9.8/5.9.8/msvc2015_64/include/QtCore MainApp.h -o tmp\release\moc_MainApp.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">MOC MainApp.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">tmp\release\moc_MainApp.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">MainApp.h;tmp\debug\moc_predefs.h;D:\Qt\Qt5.9.8\5.9.8\msvc2015_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">D:\Qt\Qt5.9.8\5.9.8\msvc2015_64\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -DWIN64 -DQT_DEPRECATED_WARNINGS -DQT_QUICK_LIB -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_MULTIMEDIA_LIB -DQT_OPENGLEXTENSIONS_LIB -DQT_GUI_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include ./tmp/debug/moc_predefs.h -ID:/Qt/Qt5.9.8/5.9.8/msvc2015_64/mkspecs/win32-msvc -ID:/mooc/C++Mooc/Publish/CodeForMoocC++Course/quickzhao_Codes/Muying/MYPlayer/src/MYPlayer -ID:/mooc/C++Mooc/Publish/CodeForMoocC++Course/quickzhao_Codes/Muying/MYPlayer/include -ID:/Qt/Qt5.9.8/5.9.8/msvc2015_64/include -ID:/Qt/Qt5.9.8/5.9.8/msvc2015_64/include/QtQuick -ID:/Qt/Qt5.9.8/5.9.8/msvc2015_64/include/QtOpenGL -ID:/Qt/Qt5.9.8/5.9.8/msvc2015_64/include/QtWidgets -ID:/Qt/Qt5.9.8/5.9.8/msvc2015_64/include/QtMultimedia -ID:/Qt/Qt5.9.8/5.9.8/msvc2015_64/include/QtOpenGLExtensions -ID:/Qt/Qt5.9.8/5.9.8/msvc2015_64/include/QtGui -ID:/Qt/Qt5.9.8/5.9.8/msvc2015_64/include/QtANGLE -ID:/Qt/Qt5.9.8/5.9.8/msvc2015_64/include/QtQml -ID:/Qt/Qt5.9.8/5.9.8/msvc2015_64/include/QtNetwork -ID:/Qt/Qt5.9.8/5.9.8/msvc2015_64/include/QtCore MainApp.h -o tmp\debug\moc_MainApp.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">MOC MainApp.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">tmp\debug\moc_MainApp.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="win32\resource.h" />
+    <ClInclude Include="win32\targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="tmp\debug\moc_MYPlay.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="tmp\release\moc_MYPlay.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="tmp\debug\moc_MYSubTitle.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="tmp\release\moc_MYSubTitle.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="tmp\debug\moc_MYVideoOutput.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="tmp\release\moc_MYVideoOutput.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="tmp\debug\moc_MainApp.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="tmp\release\moc_MainApp.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <CustomBuild Include="tmp\debug\moc_predefs.h.cbt">
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">true</ExcludedFromBuild>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">D:\Qt\Qt5.9.8\5.9.8\msvc2015_64\mkspecs\features\data\dummy.cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">cl -BxD:\Qt\Qt5.9.8\5.9.8\msvc2015_64\bin\qmake.exe -nologo -Zc:wchar_t -FS -Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zi -MDd -EHsc -GR -W3 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 -wd4577 -wd4467 -E D:\Qt\Qt5.9.8\5.9.8\msvc2015_64\mkspecs\features\data\dummy.cpp 2>NUL >tmp\debug\moc_predefs.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">Generate moc_predefs.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">tmp\debug\moc_predefs.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="tmp\release\moc_predefs.h.cbt">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">D:\Qt\Qt5.9.8\5.9.8\msvc2015_64\mkspecs\features\data\dummy.cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">cl -BxD:\Qt\Qt5.9.8\5.9.8\msvc2015_64\bin\qmake.exe -nologo -Zc:wchar_t -FS -Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -O2 -MD -EHsc -GR -W3 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 -wd4577 -wd4467 -E D:\Qt\Qt5.9.8\5.9.8\msvc2015_64\mkspecs\features\data\dummy.cpp 2>NUL >tmp\release\moc_predefs.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">Generate moc_predefs.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">tmp\release\moc_predefs.h;%(Outputs)</Outputs>
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">true</ExcludedFromBuild>
+    </CustomBuild>
+    <ClCompile Include="tmp\debug\qrc_MYPlayer.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="tmp\release\qrc_MYPlayer.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resource\ui\translation\MYPlayer_zh_CN.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resource\win32\AppIcon.ico" />
+    <CustomBuild Include="resource\MYPlayer.qrc">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">resource\MYPlayer.qrc;D:\Qt\Qt5.9.8\5.9.8\msvc2015_64\bin\rcc.exe;resource\ui\qml\main.qml;resource\ui\translation\MYPlayer_zh_CN.qm;resource\ui\image\bigVoice.png;resource\ui\image\changeSkin.png;resource\ui\image\midiumVoice.png;resource\ui\image\subTitle.png;resource\ui\image\isStop.png;resource\ui\image\zeroVoice.png;resource\ui\image\isPlay.png;resource\ui\image\openFile.png;resource\win32\AppIcon.ico;resource\ui\image\goBack.png;resource\ui\image\smallVoice.png;resource\ui\image\goOn.png;resource\ui\image\isPause.png;resource\ui\image\changeLanguage.png;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">D:\Qt\Qt5.9.8\5.9.8\msvc2015_64\bin\rcc.exe -name MYPlayer resource\MYPlayer.qrc -o tmp\release\qrc_MYPlayer.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">RCC resource/MYPlayer.qrc</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">tmp\release\qrc_MYPlayer.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">resource\MYPlayer.qrc;D:\Qt\Qt5.9.8\5.9.8\msvc2015_64\bin\rcc.exe;resource\ui\qml\main.qml;resource\ui\translation\MYPlayer_zh_CN.qm;resource\ui\image\bigVoice.png;resource\ui\image\changeSkin.png;resource\ui\image\midiumVoice.png;resource\ui\image\subTitle.png;resource\ui\image\isStop.png;resource\ui\image\zeroVoice.png;resource\ui\image\isPlay.png;resource\ui\image\openFile.png;resource\win32\AppIcon.ico;resource\ui\image\goBack.png;resource\ui\image\smallVoice.png;resource\ui\image\goOn.png;resource\ui\image\isPause.png;resource\ui\image\changeLanguage.png;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">D:\Qt\Qt5.9.8\5.9.8\msvc2015_64\bin\rcc.exe -name MYPlayer resource\MYPlayer.qrc -o tmp\debug\qrc_MYPlayer.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">RCC resource/MYPlayer.qrc</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">tmp\debug\qrc_MYPlayer.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <None Include="resource\ui\translation\MYPlayer_zh_CN.qm" />
+    <None Include="resource\ui\image\bigVoice.png" />
+    <None Include="resource\ui\image\changeLanguage.png" />
+    <None Include="resource\ui\image\changeSkin.png" />
+    <None Include="resource\ui\image\goBack.png" />
+    <None Include="resource\ui\image\goOn.png" />
+    <None Include="resource\ui\image\isPause.png" />
+    <None Include="resource\ui\image\isPlay.png" />
+    <None Include="resource\ui\image\isStop.png" />
+    <None Include="resource\ui\qml\main.qml" />
+    <None Include="resource\ui\image\midiumVoice.png" />
+    <None Include="resource\ui\image\openFile.png" />
+    <None Include="resource\ui\image\smallVoice.png" />
+    <None Include="resource\ui\image\subTitle.png" />
+    <None Include="resource\ui\image\zeroVoice.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="win32\MYPlayer.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

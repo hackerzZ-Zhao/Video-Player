@@ -1,0 +1,1 @@
+lrelease -nounfinished MYPlayer.pro

@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Translation Files">
+      <UniqueIdentifier>{639EADAA-A684-42e4-A9AD-28FC9BCB8F7C}</UniqueIdentifier>
+      <Extensions>ts;xlf</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Translation Files">
+      <UniqueIdentifier>{639EADAA-A684-42e4-A9AD-28FC9BCB8F7C}</UniqueIdentifier>
+      <Extensions>ts;xlf</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="MYAudioPlay.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MYAudioThread.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MYDecode.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MYDecodeThread.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MYDemux.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MYDemuxThread.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MYPlay.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MYResample.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MYSubTitle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MYVideoOutput.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MYVideoThread.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MainApp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="IVideoCall.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MYAudioPlay.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MYAudioThread.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MYDecode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MYDecodeThread.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MYDemux.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MYDemuxThread.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <CustomBuild Include="MYPlay.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <ClInclude Include="MYResample.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <CustomBuild Include="MYSubTitle.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="MYVideoOutput.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <ClInclude Include="MYVideoThread.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <CustomBuild Include="MainApp.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <ClInclude Include="win32\resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="win32\targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="tmp\debug\moc_MYPlay.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tmp\release\moc_MYPlay.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tmp\debug\moc_MYSubTitle.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tmp\release\moc_MYSubTitle.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tmp\debug\moc_MYVideoOutput.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tmp\release\moc_MYVideoOutput.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tmp\debug\moc_MainApp.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tmp\release\moc_MainApp.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <CustomBuild Include="tmp\debug\moc_predefs.h.cbt">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="tmp\release\moc_predefs.h.cbt">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+    <ClCompile Include="tmp\debug\qrc_MYPlayer.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tmp\release\qrc_MYPlayer.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resource\ui\translation\MYPlayer_zh_CN.ts">
+      <Filter>Translation Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resource\win32\AppIcon.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <CustomBuild Include="resource\MYPlayer.qrc">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <None Include="resource\ui\translation\MYPlayer_zh_CN.qm">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resource\ui\image\bigVoice.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resource\ui\image\changeLanguage.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resource\ui\image\changeSkin.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resource\ui\image\goBack.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resource\ui\image\goOn.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resource\ui\image\isPause.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resource\ui\image\isPlay.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resource\ui\image\isStop.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resource\ui\qml\main.qml">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resource\ui\image\midiumVoice.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resource\ui\image\openFile.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resource\ui\image\smallVoice.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resource\ui\image\subTitle.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="resource\ui\image\zeroVoice.png">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="win32\MYPlayer.rc" />
+  </ItemGroup>
+</Project>
